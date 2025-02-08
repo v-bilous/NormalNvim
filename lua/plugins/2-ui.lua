@@ -29,15 +29,24 @@ return {
   --  tokyonight [theme]
   --  https://github.com/folke/tokyonight.nvim
   {
-    "folke/tokyonight.nvim",
-    event = "User LoadColorSchemes",
-    opts = {
-      dim_inactive = false,
-      styles = {
-        comments = { italic = true },
-        keywords = { italic = true },
-      },
-    }
+     "folke/tokyonight.nvim",
+     event = "User LoadColorSchemes",
+     opts = {
+       dim_inactive = false,
+       styles = {
+         comments = { italic = true },
+         keywords = { italic = true },
+       },
+     }
+  },
+
+  -- catpuccin theme
+  -- https://github.com/catppuccin/nvim
+  {
+    "catppuccin/nvim",
+		name = "catppuccin",
+		event = "User LoadColorSchemes",
+		priority = 1000,
   },
 
   --  astrotheme [theme]
